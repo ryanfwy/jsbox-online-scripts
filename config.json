@@ -4,7 +4,7 @@
         "author": "Eva1ent",
         "profile": "tg://resolve?domain=Eva1ent",
         "description": {
-            "en": "## Class Viewer\n\nA script which is used to view Objective-C class of JSBox, such as `BaseHintView` and so on. It helps to find its Instance Methods, Class Methods, Properties and more.\n\n\n### Notes\n- Correct class name is required.\n- Case sensitive.\n\n\n### Author\n",
+            "en": "# Class Viewer\n\nA script which is used to view Objective-C class of JSBox, such as `BaseHintView` and so on. It helps to find its Instance Methods, Class Methods, Properties and more.\n\n## Notes\n- Correct class name is required.\n- Case sensitive.\n\n## Author\n",
             "zh": "# Class Viewer\n\n用于查看 JSBox 内 Objective-C 类，如 `BaseHintView` 等。此脚本可帮助寻找该类的实例方法、类方法、属性等。\n\n## 说明\n- 需要输入准确的类名；\n- 输入区分大小写。\n\n## 作者\n"
         }
     },
