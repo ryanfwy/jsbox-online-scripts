@@ -1,6 +1,7 @@
 {
     "Class Viewer": {
         "icon": "052",
+        "types": 1,
         "author": "Eva1ent",
         "profile": "tg://resolve?domain=Eva1ent",
         "description": {
@@ -10,6 +11,7 @@
     },
     "Font Family": {
         "icon": "021",
+        "types": 1,
         "author": "Ryan",
         "profile": "tg://resolve?domain=ryanryanryan",
         "description": {
@@ -19,11 +21,32 @@
     },
     "Quick Delete": {
         "icon": "027",
+        "types": 1,
         "author": "Ryan",
         "profile": "tg://resolve?domain=ryanryanryan",
         "description": {
             "en": "# Quick Delete\n\nA script which is used to delete multiple scripts quickly.\n\n## Notes\n- Delete action will not be undone, use at your own risk.\n\n## Author\n",
             "zh": "# Quick Delete\n\n用于快速删除多个脚本。\n\n## 说明\n- 删除操作无法撤回，请自行承担风险。\n\n## 作者\n"
+        }
+    },
+    "iCon Picker": {
+        "icon": "151",
+        "types": 1,
+        "author": "Ryan",
+        "profile": "tg://resolve?domain=ryanryanryan",
+        "description": {
+            "en": "# iCon Picker\n\nA script which is used to pick the icon of JSBox and copy its name.\n\n## Notes\n- Run the script and choose「Select iCon」to start.\n\n## Author\n",
+            "zh": "# iCon Picker\n\n用于选择 JSBox iCon 并复制其名称。\n\n## 说明\n- 运行脚本后点击「选择 iCon」开始。\n\n## 作者\n"
+        }
+    },
+    "JSBox Share Link": {
+        "icon": "152",
+        "types": 1,
+        "author": "Ryan",
+        "profile": "tg://resolve?domain=ryanryanryan",
+        "description": {
+            "en": "# JSBox Share Link\n\nA script which is used to generate official share link of xteko.com/redir from within JSBox scripts.\n\n## Notes\n- Default configuration will be got from the script's setting.\n- For a simple script, all parameters can be configured.\n- For a package, parameters other than `Name` and `URL` will not be configured, you should set these parameters from `config.json`.\n\n## Author\n",
+            "zh": "# JSBox Share Link\n\n用于从 JSBox 脚本生成 xteko.com/redir 官方分享链接。\n\n## Notes\n- 初始参数配置将从原脚本设置获取；\n- 对于单文件脚本，所有参数均可配置；\n- 对于安装包格式脚本，除了 `Name` and `URL` 以外的参数均不可配置，请从 `config.json` 配置这些参数。\n\n## Author\n"
         }
     }
 }
