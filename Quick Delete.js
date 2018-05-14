@@ -15,6 +15,11 @@ $app.strings = {
   }
 }
 
+$define({
+  type: "TableViewDelegate: NSObject <UITableViewDelegate>"
+})
+var delegate = $objc("TableViewDelegate").invoke("alloc.init")
+
 const TEMPLATE = {
   props: {
     multipleSelectionBackgroundView: $ui.create({type: "view"})
@@ -139,10 +144,6 @@ function listAddinFiles() {
   $("list").data = data
 
   // Replace the delegate
-  $define({
-    type: "TableViewDelegate: NSObject <UITableViewDelegate>"
-  })
-  delegate = $objc("TableViewDelegate").invoke("alloc.init")
   $("list").runtimeValue().invoke("setDelegate", delegate)
 }
 
