@@ -163,6 +163,9 @@ function pushEditorView(file) {
   $app.autoKeyboardEnabled = true
   var isEnabled = file.name.indexOf(".js") == -1 ? false : true
   $ui.push({
+    props: {
+      title: file.displayName
+    },
     views: [{
         type: "view",
         layout: function(make) {
