@@ -117,16 +117,7 @@ String.prototype.prependZero = function(digit) {
 }
 
 var iconData = null
-
-$app.listen({
-  ready: function() {
-    $app.autoKeyboardEnabled = true
-    listAddinFiles()
-  },
-  exit: function() {
-    $app.autoKeyboardEnabled = false
-  }
-})
+listAddinFiles()
 
 /* Function */
 function listAddinFiles() {
@@ -166,6 +157,7 @@ function listAddinFiles() {
 }
 
 function pushEditorView(file) {
+  $app.autoKeyboardEnabled = true
   var isEnabled = file.name.indexOf(".js") == -1 ? false : true
   $ui.push({
     views: [{
