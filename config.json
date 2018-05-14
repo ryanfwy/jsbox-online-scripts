@@ -46,7 +46,7 @@
         "profile": "tg://resolve?domain=ryanryanryan",
         "description": {
             "en": "# JSBox Share Link\n\nA script which is used to generate official share link of xteko.com/redir from within JSBox scripts.\n\n## Notes\n- Default configuration will be got from the script's setting.\n- For a simple script, all parameters can be configured.\n- For a package, parameters other than `Name` and `URL` will not be configured, you should set these parameters from `config.json`.\n\n## Author\n",
-            "zh": "# JSBox Share Link\n\n用于从 JSBox 脚本生成 xteko.com/redir 官方分享链接。\n\n## 说明\n- 初始参数配置将从原脚本设置获取；\n- 对于单文件脚本，所有参数均可配置；\n- 对于安装包格式脚本，除了 `名称` 和 `URL` 以外的参数均不可配置，请从 `config.json` 配置这些参数。\n\n## 作者\n"
+            "zh": "# JSBox Share Link\n\n用于从 JSBox 脚本生成 xteko.com/redir 官方分享链接。\n\n## 说明\n- 初始参数配置将从原脚本设置获取；\n- 对于单文件脚本，所有参数均可配置；\n- 对于安装包格式脚本，除了 `名称` 和 `URL` 以外的参数均不可配置，请从 `config.json` 配置这些参数。\n\n## 作者\n"
         }
     },
     "QR Decoder": {
@@ -56,7 +56,7 @@
         "profile": "tg://resolve?domain=ryanryanryan",
         "description": {
             "en": "# QR Decoder\n\nA script which is used to decode QR Code from share extension or main app.\n\n## Notes\n- Simply share a QR Code image and run as this script.\n- Or you can just run from main app to select a QR Code image.\n\n## Author\n",
-            "zh": "# QR Decoder\n\n用于通过分享或主应用运行以解码二维码图片。\n\n## 说明\n- 直接把二维码图片通过分享以此脚本运行；\n- 或从主应用运行并选择相册内的二维码图片。\n\n## 作者\n"
+            "zh": "# QR Decoder\n\n用于通过分享或主应用运行以解码二维码图片。\n\n## 说明\n- 直接把二维码图片通过分享以此脚本运行；\n- 或从主应用运行并选择相册内的二维码图片。\n\n## 作者\n"
         }
     }
 }
