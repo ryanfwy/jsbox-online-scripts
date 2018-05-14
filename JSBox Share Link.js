@@ -122,6 +122,9 @@ listAddinFiles()
 /* Function */
 function listAddinFiles() {
   $ui.render({
+    props: {
+      title: "JSBox Share Link"
+    },
     views: [{
       type: "list",
       props: {
