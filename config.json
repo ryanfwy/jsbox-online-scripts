@@ -55,8 +55,7 @@
         "author": "Ryan",
         "profile": "tg://resolve?domain=ryanryanryan",
         "description": {
-            "en": "# QR Decoder\n\nA script which is used to decode QR Code from share extension or main app.\n\n## Notes\n- Simply share a QR Code image and run as this script.\n- Or you can just run from main app to select a QR Code image.\n\n## Author\n",
-            "zh": "# QR Decoder\n\n用于通过分享或主应用运行以解码二维码图片。\n\n## 说明\n- 直接把二维码图片通过分享以此脚本运行；\n- 或从主应用运行并选择相册内的二维码图片。\n\n## 作者\n"
+            "en": "# QR Decoder\n\nA script which is used to decode QR Code from share extension or main app.\n\n## Notes\n- Simply share a QR Code image and run as this script.\n- Or you can just run from main app to select a QR Code image.\n\n## Author\n"
         }
     }
 }
