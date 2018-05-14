@@ -1,3 +1,14 @@
+$app.strings = {
+  "en": {
+    "copy": "Copy",
+    "copied": " Copied"
+  },
+  "zh-Hans": {
+    "copy": "复制",
+    "copied": " 已复制"
+  }
+}
+
 const template = [{
     type: "label",
     props: {
@@ -64,11 +75,11 @@ $ui.render({
       rowHeight: 70,
       separatorHidden: true,
       actions: [{
-        title: "Copy",
+        title: $l10n("copy"),
         handler: function(view, indexPath) {
           var font = view.object(indexPath).font.text
           $clipboard.text = font
-          $ui.toast(font + " Copied")
+          $ui.toast(font + $l10n("copied"))
         }
       }]
     },
