@@ -3,14 +3,12 @@ $app.strings = {
     "alert_message_copy": "Wanna copy?",
     "alert_button_cancel": "Cancel",
     "alert_button_copy_as": "Copy as ",
-    "button_select": "Select iCon",
     "toast_copied": "Copied"
   },
   "zh-Hans": {
     "alert_message_copy": "需要复制吗？",
     "alert_button_cancel": "取消",
     "alert_button_copy_as": "复制为 ",
-    "button_select": "选择 iCon",
     "toast_copied": "已复制"
   }
 }
@@ -50,23 +48,4 @@ function selectIcon() {
   icons.invoke("show")
 }
 
-$ui.render({
-  props: {
-    title: "iCon Picker"
-  },
-  views: [{
-    type: "button",
-    props: {
-      title: $l10n("button_select")
-    },
-    layout: function(make) {
-      make.centerY.equalTo()
-      make.left.right.inset(20)
-    },
-    events: {
-      tapped: function() {
-        selectIcon()
-      }
-    }
-  }]
-})
+selectIcon()
