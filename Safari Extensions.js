@@ -7,34 +7,38 @@ $app.strings = {
   }
 }
 
-if ($app.env != $env.safari) {
-  $ui.alert($l10n("TIPS"))
-  return;
-}
+main()
 
-var items = [{
-    "name": "Firebug Lite",
-    "script": firebug
-  },
-  {
-    "name": "vConsole",
-    "script": vconsole
-  },
-  {
-    "name": "Eruda",
-    "script": eruda
-  },
-  {
-    "name": "Clear Images",
-    "script": clearImages
+function main() {
+  if ($app.env != $env.safari) {
+    $ui.alert($l10n("TIPS"))
+    return;
   }
-]
 
-$ui.menu(items.map(function(item) {
-  return item.name;
-})).then(function(selected) {
-  $safari.inject(items[selected.index].script());
-});
+  var items = [{
+      "name": "Firebug Lite",
+      "script": firebug
+    },
+    {
+      "name": "vConsole",
+      "script": vconsole
+    },
+    {
+      "name": "Eruda",
+      "script": eruda
+    },
+    {
+      "name": "Clear Images",
+      "script": clearImages
+    }
+  ]
+
+  $ui.menu(items.map(function(item) {
+    return item.name;
+  })).then(function(selected) {
+    $safari.inject(items[selected.index].script());
+  });
+}
 
 function clearImages() {
   return `var images = document.getElementsByTagName('img');
