@@ -80,7 +80,7 @@ function showEngines(url) {
     items: engines.map(function(item) { return item.name }),
     handler: function(title, idx) {
       var pattern = engines[idx].pattern
-      $app.openURL(pattern + $text.URLEncode(url))
+      $app.openURL(pattern + encodeURIComponent(url))
       $app.close()
     }
   })
