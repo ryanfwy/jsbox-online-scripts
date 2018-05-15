@@ -68,5 +68,15 @@
             "en": "# IPA Installer\n\nA script to install signed ipa from share extension or main app. It helps to install backup ipas downloaded from App Store.\n\n## Notes\n- Signed ipa only, mostly they come from iTunes.\n- JSBox has no permission to run in background, so **don't leave JSBox** if large ipa is being installed.\n\n## Author\n",
             "zh": "# IPA Installer\n\n用于通过分享或主应用运行直接安装已签名的 ipa。此脚本可帮助安装从 App Store 下载的备份 ipa。\n\n## 说明\n- 仅已签名的 ipa 文件；\n- 由于 JSBox 没有后台运行的权限，安装大文件时**请勿离开 JSBox 应用**。\n\n## 作者\n"
         }
+    },
+    "Search Picture": {
+        "icon": "014",
+        "types": 5,
+        "author": "Cyan",
+        "profile": "tg://resolve?domain=cyanapps",
+        "description": {
+            "en": "# Search Picture\n\nA script to search by picture. It helps to access search engine qucikly from share extension or main app.\n\n## Notes\n- Support Google, Baidu and Sougou picture searching engines.\n\n## Author\n",
+            "zh": "# Search Picture\n\n用于通过分享或主应用运行上传图片进行图片搜索。\n\n## 说明\n- 支持谷歌、百度和搜狗以图搜图引擎。\n\n## 作者\n"
+        }
     }
 }
