@@ -68,7 +68,7 @@ function showEngines(url) {
     handler: function(title, idx) {
       var pattern = engines[idx].pattern
       $app.openURL(pattern + encodeURIComponent(url))
-      $app.close()
+      //$app.close()
     }
   })
 }
