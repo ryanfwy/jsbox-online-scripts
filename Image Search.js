@@ -2,7 +2,7 @@ $app.strings = {
   "en": {
     "item_clipboard_link": "Search by Clipboard Link",
     "item_clipboard_image": "Search by Clipboard Image",
-    "item_pick": "Pick from Photo",
+    "item_pick": "Pick from Photos",
     "engine_google": "Google",
     "engine_baidu": "Baidu",
     "engine_sougou": "Sougou"
