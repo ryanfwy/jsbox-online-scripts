@@ -1,16 +1,16 @@
 $app.strings = {
   "en": {
-    "item_clipboard": "Clipboard",
-    "item_last": "Last Photo",
-    "item_pick": "Pick Photo",
+    "item_clipboard_link": "Search by Clipboard Link",
+    "item_clipboard_image": "Search by Clipboard Image",
+    "item_pick": "Pick from Photo",
     "engine_google": "Google",
     "engine_baidu": "Baidu",
     "engine_sougou": "Sougou"
   },
   "zh-Hans": {
-    "item_clipboard": "剪贴板",
-    "item_last": "最后一张",
-    "item_pick": "选择图片",
+    "item_clipboard_link": "搜索剪贴板链接",
+    "item_clipboard_image": "搜索剪贴板图片",
+    "item_pick": "从相册选择图片",
     "engine_google": "谷歌搜索",
     "engine_baidu": "百度搜索",
     "engine_sougou": "搜狗搜索"
@@ -31,19 +31,6 @@ const engines = [
     pattern: "http://pic.sogou.com/ris?flag=1&nr=true&query="
   }
 ]
-
-function lastImage(){
-  $photo.fetch({
-    count:1,
-    handler:function(image){
-      if(image){
-        searchImage(image[0].jpg(1.0))
-      } else {
-        $ui.loading(false)
-      }
-    }
-  })
-}
 
 function pickImage() {
   $photo.pick({
@@ -87,40 +74,31 @@ function showEngines(url) {
 }
 
 var inputData = $context.data
+var inputImage = $context.image
 var inputLink = $context.link
 var clipData = $clipboard.image
 var clipLink = $clipboard.link
 
 if (inputData) {
   searchImage(inputData)
+} else if (inputImage) {
+  searchImage(inputImage.jpg(1.0))
 } else if (inputLink) {
   showEngines(inputLink)
-} else if (clipData || clipLink) {
+} else if (clipData) {
   $ui.menu({
-    items: [$l10n("item_clipboard"), $l10n("item_last"), $l10n("item_pick")],
+    items: [$l10n("item_clipboard_image"), $l10n("item_pick")],
     handler: function(title, idx) {
-      switch(idx){
-        case 0: 
-          if(clipLink){
-            showEngines(clipLink)
-          } else{
-            searchImage(clipData)
-          }         
-          break
-        case 1:
-          lastImage()
-          break
-        case 2:
-          pickImage()
-          break
-      }
+      idx == 0 ? searchImage(clipData) : pickImage()
+    }
+  })
+} else if (clipLink) {
+  $ui.menu({
+    items:[$l10n("item_clipboard_link"), $l10n("item_pick")],
+    handler:function(title, idx){
+      idx == 0 ? showEngines(clipLink) : pickImage()
     }
   })
 } else {
-  $ui.menu({
-    items:[$l10n("item_last"), $l10n("item_pick")],
-    handler:function(title, idx){
-      idx == 0 ? lastImage() : pickImage()
-    }
-  })
+  pickImage()
 }
