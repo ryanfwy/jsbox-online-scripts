@@ -5,6 +5,8 @@
 - 这些脚本功能独立单一，但十分分散；
 - 这些脚本一般不涉及大幅度更新。
 
+相应 JSBox 脚本：[Light Scripts](https://xteko.com/redir?name=Light%20Scripts&url=https%3A%2F%2Folx97w61o.qnssl.com%2FLight-Scripts.box&author=Ryan&version=1.0)
+
 ## 介绍
 为此，我整理出类似于工具合集的动态「轻脚本」，代码托管在 Github 上，使用者不需要关注是否有更新，只要在**偶尔需要用一下**的时候能够方便用上。
 
