@@ -78,15 +78,5 @@
             "en": "# Image Search\n\nA script to search by picture. It helps to access search engine qucikly from share extension or main app.\n\n## Notes\n- Support Google, Baidu and Sougou picture searching engines.\n\n## Author\n",
             "zh": "# Image Search\n\n用于通过分享或主应用运行上传图片进行图片搜索。\n\n## 说明\n- 支持谷歌、百度和搜狗以图搜图引擎。\n\n## 作者\n"
         }
-    },
-    "Safari Extensions": {
-        "icon": "042",
-        "types": 4,
-        "author": "Cyan",
-        "profile": "tg://resolve?domain=cyanapps",
-        "description": {
-            "en": "# Safari Extensions\n\nA script to inject js scripts to the Safari webpage from share extension. It helps to activate debug console such as Firebug, vConsole and Eruda, and clear webpage images.\n\n## Notes\n- Safari.app or any Safari View Controller only.\n\n## Author\n",
-            "zh": "# Search Picture\n\n用于通过分享注入 js 脚本至 Safari 网页。此脚本可帮助激活控制台如 Firebug、vConsole 和 Eruda，亦可清除所有网页图片。\n\n## 说明\n- 仅支持 Safari.app 或任何 Safari View Controller 环境。\n\n## 作者\n"
-        }
     }
 }
