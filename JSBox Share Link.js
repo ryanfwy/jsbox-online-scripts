@@ -45,7 +45,7 @@ $app.strings = {
   }
 }
 
-const TEMPLATE = [{
+var TEMP = [{
     type: "image",
     props: {
       id: "icon",
@@ -129,7 +129,7 @@ function listAddinFiles() {
       type: "list",
       props: {
         id: "list_addins",
-        template: TEMPLATE,
+        template: TEMP,
         rowHeight: 50
       },
       layout: $layout.fill,
