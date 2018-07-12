@@ -17,7 +17,7 @@ $app.strings = {
   }
 }
 
-const engines = [
+var engines = [
   {
     name: $l10n("engine_google"),
     pattern: "https://images.google.com/searchbyimage?image_url="
