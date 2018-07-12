@@ -9,7 +9,7 @@ $app.strings = {
   }
 }
 
-const template = [{
+var TEMPLATE = [{
     type: "label",
     props: {
       id: "font",
@@ -71,7 +71,7 @@ $ui.render({
   views: [{
     type: "list",
     props: {
-      template: template,
+      template: TEMPLATE,
       rowHeight: 70,
       separatorHidden: true,
       actions: [{
