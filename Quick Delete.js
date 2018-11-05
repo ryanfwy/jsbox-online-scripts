@@ -20,7 +20,7 @@ $define({
 })
 var delegate = $objc("TableViewDelegate").invoke("alloc.init")
 
-const TEMPLATE = {
+var TEMPLATE = {
   props: {
     multipleSelectionBackgroundView: $ui.create({type: "view"})
   },
