@@ -19,16 +19,6 @@
             "zh": "# Font Family\n\n用于查看 iOS 内置的字体集。点击任意一行输入想要显示的内容，左滑复制字体名称。\n\n## 说明\n- 仅内置字体集可查。\n\n## 作者\n"
         }
     },
-    "Quick Delete": {
-        "icon": "027",
-        "types": 1,
-        "author": "Ryan",
-        "profile": "tg://resolve?domain=ryanryanryan",
-        "description": {
-            "en": "# Quick Delete\n\nA script to delete multiple scripts quickly. Tap「Delete」button to delete with multiple selection.\n\n## Notes\n- Delete action will not be undone, use at your own risk.\n\n## Author\n",
-            "zh": "# Quick Delete\n\n用于快速删除多个脚本。多选脚本，点击「删除」按钮删除。\n\n## 说明\n- 删除操作无法撤回，请自行承担风险。\n\n## 作者\n"
-        }
-    },
     "iCon Picker": {
         "icon": "151",
         "types": 1,
